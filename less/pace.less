@@ -11,6 +11,10 @@
 .pace-done {
   .loader {
     opacity:0;
+
+    &.page-not-found {
+      opacity:1 !important;
+    }
   }
 
   .content {
@@ -92,6 +96,24 @@
   to {
     width:15px;
   }
+}
+
+.page-not-found h1 {
+  display: block;
+  position: absolute;
+  margin: auto;
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width:120px;
+  height:50px;
+  font-size:40px;
+  font-weight:700;
+  transform: translateY(80px);
+  color: #fff;
+
 }
 
 
