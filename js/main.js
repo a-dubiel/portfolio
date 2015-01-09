@@ -77,6 +77,7 @@ var userFeed = new Instafeed({
           var $target = $( event.target ).parent();
           var isGigante = $target.hasClass('big');
           $target.toggleClass('big');
+          ga('send', 'event', 'About', 'click', 'View Instagram');
 
           $container.packery();
       });
@@ -119,6 +120,7 @@ $('#contact-form').submit(function(e){
     if(good === true) {
 
         btn.addClass('sending').text('Sending...');
+        ga('send', 'event', 'Contact Form', 'click', 'Message Sent', email.val());
 
         $.ajax({
             type: 'POST',

@@ -46,9 +46,9 @@
                     <a href="#home" class="logo"><img src="img/logo.svg" alt="logo" /></a>
                     <nav role="navigation">
                         <ul class="nav">
-                            <li data-menuanchor="about"><a href="#about">About</a></li>
-                            <li data-menuanchor="work"><a href="#work">Work</a></li>
-                            <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+                            <li data-menuanchor="about" onclick="ga('send', 'event', 'Main Nav', 'click', 'About');"><a href="#about">About</a></li>
+                            <li data-menuanchor="work"><a href="#work" onclick="ga('send', 'event', 'Main Nav', 'click', 'Work');">Work</a></li>
+                            <li data-menuanchor="contact"><a href="#contact" onclick="ga('send', 'event', 'Main Nav', 'click', 'Contact');">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -60,20 +60,20 @@
                         <h1>Andrzej Dubiel - Front End Developer &amp; UI/UX Designer</h1>
 
                         <ul class="social">
-                          <li><a href="#contact"><i class="fa fa-envelope"></i></a></li>
-                          <li><a href="http://pl.linkedin.com/pub/andrzej-dubiel/2b/1ba/492" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                          <li><a href="https://github.com/pier0n" target="_blank"><i class="fa fa-github"></i></a></li>
-                          <li><a href="http://codepen.io/dubiel/" target="_blank"><i class="fa fa-codepen"></i></a></li>
-                          <li><a href="https://dribbble.com/andrzej-dubiel" target="_blank"><i class="fa fa-dribbble"></i></a></li>
-                          <li><a href="http://instagram.com/a_dubiel/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                          <li><a href="https://soundcloud.com/pier0n/likes" target="_blank"><i class="fa fa-soundcloud"></i></a></li>
+                          <li><a href="#contact" onclick="ga('send', 'event', 'Social', 'click', 'Contact');"><i class="fa fa-envelope"></i></a></li>
+                          <li><a href="http://pl.linkedin.com/pub/andrzej-dubiel/2b/1ba/492" onclick="ga('send', 'event', 'Social', 'click', 'LinkedIn');" target="_blank" ><i class="fa fa-linkedin"></i></a></li>
+                          <li><a href="https://github.com/pier0n" target="_blank" onclick="ga('send', 'event', 'Social', 'click', 'Github');"><i class="fa fa-github"></i></a></li>
+                          <li><a href="http://codepen.io/dubiel/" target="_blank"><i class="fa fa-codepen" onclick="ga('send', 'event', 'Social', 'click', 'Codepen');"></i></a></li>
+                          <li><a href="https://dribbble.com/andrzej-dubiel" target="_blank" onclick="ga('send', 'event', 'Social', 'click', 'Dribbble');"><i class="fa fa-dribbble"></i></a></li>
+                          <li><a href="http://instagram.com/a_dubiel/" target="_blank"><i class="fa fa-instagram" onclick="ga('send', 'event', 'Social', 'click', 'Instagram');"></i></a></li>
+                          <li><a href="https://soundcloud.com/pier0n/likes" target="_blank" onclick="ga('send', 'event', 'Social', 'click', 'Soundcloud');"><i class="fa fa-soundcloud"></i></a></li>
                       </ul>
 
 
 
                   </div>
 
-                  <a href="#about" class="scroll-down"><i class="fa fa-angle-down"></i></a>
+                  <a href="#about" onclick="ga('send', 'event', 'Main Nav', 'click', 'Scroll Down');"  class="scroll-down"><i class="fa fa-angle-down"></i></a>
 
               </section>
               
@@ -85,8 +85,8 @@
                             <div class="col-lg-12 col-md-12">
                                 <h3>That's me.</h3>
                                 <p>My name is Andrzej. I am a front-end web developer and UI/UX designer with almost 6 years of hands-on experience. I have a true passion for web development and human interaction. I love breaking down complex ideas and turning them into simple and creative solutions. Over the course of my career, I have ve worked at a variety of companies, from startups to marketing agencies. Having a wide range of experience has given me an opportunity to explore new technologies and work with brilliant human beings.</p>
-                                <a href="#work" class="btn btn-default">My Work</a>
-                                <a href="files/dubiel-resume.pdf" class="btn btn-default"><i class="fa fa-download"></i> My resume</a>
+                                <a onclick="ga('send', 'event', 'About', 'click', 'See Work');" href="#work" class="btn btn-default">My Work</a>
+                                <a onclick="ga('send', 'event', 'About', 'click', 'Download Resume');" href="files/dubiel-resume.pdf" class="btn btn-default"><i class="fa fa-download"></i> My resume</a>
                             </div>                                
                         </div>
                     </div>
@@ -99,7 +99,7 @@
                 <div class="work">
                     <div class="cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-slides=".work-item" data-carousel-offset="85" data-cycle-log="false" data-cycle-next="#next" data-cycle-prev="#prev">
 
-                        <a href="img/work-hasztag.jpg" class="work-item" data-effect="mfp-3d-unfold" itemscope itemtype="https://schema.org/CreativeWork">
+                        <a onclick="ga('send', 'event', 'Work', 'click', 'Hasztag');" href="img/work-hasztag.jpg" class="work-item" data-effect="mfp-3d-unfold" itemscope itemtype="https://schema.org/CreativeWork">
                             <div class="square">
                                 <img src="img/logo-hasztag.svg" alt="Hasztag.info Logo" />
                                 <i class="fa fa-search"></i>
@@ -108,7 +108,7 @@
                             <p class="caption">Design, Development</p>
                         </a>
 
-                        <a href="img/work-wybierzsport.jpg" class="work-item" data-effect="mfp-3d-unfold" itemscope itemtype="https://schema.org/CreativeWork">
+                        <a onclick="ga('send', 'event', 'Work', 'click', 'Wybierzsport');" href="img/work-wybierzsport.jpg" class="work-item" data-effect="mfp-3d-unfold" itemscope itemtype="https://schema.org/CreativeWork">
                             <div class="square">
                              <img src="img/logo-wybierzsport.svg" alt="Wybierzsport.pl Logo" />
                              <i class="fa fa-search"></i>
@@ -118,7 +118,7 @@
                          <p class="caption">Design, Development</p>
                      </a>
 
-                     <a href="img/work-swimsmart.jpg" class="work-item" data-effect="mfp-3d-unfold" itemscope itemtype="https://schema.org/CreativeWork">
+                     <a onclick="ga('send', 'event', 'Work', 'click', 'Swimsmart');" href="img/work-swimsmart.jpg" class="work-item" data-effect="mfp-3d-unfold" itemscope itemtype="https://schema.org/CreativeWork">
                         <div class="square">
                          <img src="img/logo-swimsmart.svg" alt="Swimsmart Logo" />
                          <i class="fa fa-search"></i>
@@ -127,7 +127,7 @@
                      <p class="caption">Concept Design</p>
                  </a> 
 
-                 <a href="img/work-custi.jpg" class="work-item" data-effect="mfp-3d-unfold" itemscope itemtype="https://schema.org/CreativeWork">
+                 <a onclick="ga('send', 'event', 'Work', 'click', 'Custi');" href="img/work-custi.jpg" class="work-item" data-effect="mfp-3d-unfold" itemscope itemtype="https://schema.org/CreativeWork">
                     <div class="square">
                      <img src="img/logo-custi.svg" alt="Custi Logo"/>
                      <i class="fa fa-search"></i>
@@ -136,7 +136,7 @@
                  <p class="caption">Design, Development</p>
              </a>
 
-             <a href="img/work-koka.jpg" class="work-item" data-effect="mfp-3d-unfold" itemscope itemtype="https://schema.org/CreativeWork">
+             <a onclick="ga('send', 'event', 'Work', 'click', 'Koka');" href="img/work-koka.jpg" class="work-item" data-effect="mfp-3d-unfold" itemscope itemtype="https://schema.org/CreativeWork">
                 <div class="square">
                  <img src="img/logo-koka.svg" alt="Koka Beats Logo" />
                  <i class="fa fa-search"></i>
@@ -145,7 +145,7 @@
              <p class="caption">Design, Development</p>
          </a>  
 
-         <a href="img/work-thrive.jpg" class="work-item" data-effect="mfp-3d-unfold" itemscope itemtype="https://schema.org/CreativeWork">
+         <a onclick="ga('send', 'event', 'Work', 'click', 'Thrive');" href="img/work-thrive.jpg" class="work-item" data-effect="mfp-3d-unfold" itemscope itemtype="https://schema.org/CreativeWork">
             <div class="square">
              <img src="img/logo-thrive.svg" alt="Thrive Logo" />
              <i class="fa fa-search"></i>
@@ -159,8 +159,8 @@
 
  <div class="container">
     <nav class="nav-work">
-        <a href="#" class="prev" id="prev"><i class="fa fa-angle-left"></i></a>
-        <a href="#" class="next" id="next"><i class="fa fa-angle-right"></i></a>
+        <a href="#" class="prev" id="prev" onclick="ga('send', 'event', 'Work', 'click', 'Nav Prev');"><i class="fa fa-angle-left"></i></a>
+        <a href="#" class="next" id="next" onclick="ga('send', 'event', 'Work', 'click', 'Nav Next');"><i class="fa fa-angle-right"></i></a>
     </nav>
 </div>
 </div>
@@ -197,18 +197,18 @@
                                 </div>
                             </div>
                             <div class="col-lg-12">
-                                <button type="submit" class="btn btn-default btn-block">Send it</button>
+                                <button type="submit" class="btn btn-default btn-block" onclick="ga('send', 'event', 'Contact Form', 'click', 'Send');">Send it</button>
                             </div>
                         </div>
                     </form>
 
                     <ul class="social hidden-xs">
-                      <li><a href="http://pl.linkedin.com/pub/andrzej-dubiel/2b/1ba/492" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                      <li><a href="https://github.com/pier0n" target="_blank"><i class="fa fa-github"></i></a></li>
-                      <li><a href="http://codepen.io/dubiel/" target="_blank"><i class="fa fa-codepen"></i></a></li>
-                      <li><a href="https://dribbble.com/andrzej-dubiel" target="_blank"><i class="fa fa-dribbble"></i></a></li>
-                      <li><a href="http://instagram.com/a_dubiel/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                      <li><a href="https://soundcloud.com/pier0n/likes" target="_blank"><i class="fa fa-soundcloud"></i></a></li>
+                      <li><a href="http://pl.linkedin.com/pub/andrzej-dubiel/2b/1ba/492" onclick="ga('send', 'event', 'Social', 'click', 'LinkedIn');" target="_blank" ><i class="fa fa-linkedin"></i></a></li>
+                          <li><a href="https://github.com/pier0n" target="_blank" onclick="ga('send', 'event', 'Social', 'click', 'Github');"><i class="fa fa-github"></i></a></li>
+                          <li><a href="http://codepen.io/dubiel/" target="_blank"><i class="fa fa-codepen" onclick="ga('send', 'event', 'Social', 'click', 'Codepen');"></i></a></li>
+                          <li><a href="https://dribbble.com/andrzej-dubiel" target="_blank" onclick="ga('send', 'event', 'Social', 'click', 'Dribbble');"><i class="fa fa-dribbble"></i></a></li>
+                          <li><a href="http://instagram.com/a_dubiel/" target="_blank"><i class="fa fa-instagram" onclick="ga('send', 'event', 'Social', 'click', 'Instagram');"></i></a></li>
+                          <li><a href="https://soundcloud.com/pier0n/likes" target="_blank" onclick="ga('send', 'event', 'Social', 'click', 'Soundcloud');"><i class="fa fa-soundcloud"></i></a></li>
                   </ul>
                   <footer class="love">
                       <p>Made with love.</p>
