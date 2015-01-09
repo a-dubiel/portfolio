@@ -36,7 +36,25 @@ $(document).ready(function() {
         verticalCentered: false,
         resize : false,
         fixedElements: '#header',
-        responsive: 0
+        responsive: 0,
+        afterLoad: function(anchorLink, index){
+          switch (anchorLink) {
+            case 'home':
+              $('meta[name=theme-color]').attr('content', '#26a65b');
+              break;
+            case 'work':
+              $('meta[name=theme-color]').attr('content', '#00bdb5');
+              break;
+            case 'about':
+              $('meta[name=theme-color]').attr('content', '#F9690E');
+              break;
+            case 'contact':
+              $('meta[name=theme-color]').attr('content', '#2C3E50');
+              break;
+            default:
+              $('meta[name=theme-color]').attr('content', '#26a65b');
+          }
+        }
  });
 
 
