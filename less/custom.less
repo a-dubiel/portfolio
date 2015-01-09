@@ -278,7 +278,6 @@
 	p {
 		padding:0 0 20px;
 		margin:0;
-
 	}
 
 	@media (min-width: @screen-sm-min) {
@@ -569,6 +568,10 @@
 	animation: hover 0.5s alternate infinite ease-in-out;
 	font-size:30px;
 	color: darken(@color-home,5%);
+
+	&:hover, &:active, &:focus {
+		color: darken(@color-home,5%);
+	}
 }
 
 
