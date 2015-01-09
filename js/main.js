@@ -44,7 +44,7 @@ $(document).ready(function() {
 Pace.once('done', function(){
     
     $('.typewriter').typed({
-        strings: ["^1800 Hi.^800 It's nice to see you.", "I'm Andrzej and ^700 I do The Internets."],
+        strings: ["dsasdads dsadsadsa sdadsaasd dsaasd dsadsadsa dsasdasda sdasda dsadsa","^1800 Hi.^800 It's nice to see you.", "I'm Andrzej and ^700 I do The Internets."],
         typeSpeed: 40,
         backSpeed: 20,
         backDelay: 800
@@ -162,13 +162,9 @@ else {
     },3000);
 
 }
-
-
     return false;
 
 });
-
-
 
 $('.cycle-slideshow').magnificPopup({
   delegate: 'a',
@@ -184,32 +180,6 @@ $('.cycle-slideshow').magnificPopup({
   closeOnContentClick: true,
   midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
 });
-
-
-
-if(!Modernizr.input.placeholder){
-    $("input").each(function(){
-      if($(this).val()=="" &amp;&amp; $(this).attr("placeholder")!=""){
-        $(this).val($(this).attr("placeholder"));
-        $(this).focus(function(){
-          if($(this).val()==$(this).attr("placeholder")) $(this).val("");
-        });
-        $(this).blur(function(){
-          if($(this).val()=="") $(this).val($(this).attr("placeholder"));
-        });
-      }
-    });
-  }
-
-
-
-
-
-
-
-
-
-
 
 
 });
