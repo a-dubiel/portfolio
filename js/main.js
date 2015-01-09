@@ -36,10 +36,7 @@ $(document).ready(function() {
         verticalCentered: false,
         resize : false,
         fixedElements: '#header',
-        responsive: 0, 
-        afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){
-          console.log(index);
-        }
+        responsive: 0
  });
 
 
