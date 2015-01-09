@@ -1,12 +1,29 @@
-.pace {
+.pace-running {
+  .loader {
+    opacity:1;
+  }
+
+  .content {
+    opacity:0;
+  }
+}
+
+.pace-done {
+  .loader {
+    opacity:0;
+  }
+
+  .content {
+    opacity:1;
+  }
+}
+
+.loader {
   -webkit-pointer-events: none;
   pointer-events: none; 
-
   -webkit-user-select: none; 
   -moz-user-select: none;
   user-select: none;
-
-
   z-index: 2000;
   position: fixed;
   height: 100%;
@@ -18,22 +35,12 @@
   bottom: 0;
   background-color:#26A65B;
   opacity: 1;
-    -webkit-transition: all 0.3s ease-in-out;
-       -o-transition: all 0.3s ease-in-out;
-          transition: all 0.3s ease-in-out;
-
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.pace.pace-inactive {
-  opacity: 0; 
-  .content {
-    display:none;
-  }
-}  
-
-
-
-.pace .pace-progress {
+.loader .logo {
   position: fixed;
   z-index: 2000;
   display: block;
@@ -50,7 +57,7 @@
   animation: hover 0.5s alternate infinite ease-in-out; 
 }
 
-.pace .pace-activity {
+.loader .shadow {
   z-index: 2000;
   display: block;
   position: absolute;
@@ -60,13 +67,11 @@
   right: 0;
   bottom: 0;
   transform: translateY(30px);
-
-
   width: 40px;
   height: 5px;
   border-radius: 50%;
   background-color: darken(#26A65B,5%);
-    animation: hoverShadow 0.5s alternate infinite ease-in-out;
+  animation: hoverShadow 0.5s alternate infinite ease-in-out;
 }
 
 @keyframes hover {

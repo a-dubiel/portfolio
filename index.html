@@ -41,182 +41,187 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
-            <header class="header">
+        <div class="loader">
+            <div class="logo"></div>
+            <div class="shadow"></div>
+        </div>
+        
+        <header class="header">
+            <div class="container">
+                <a href="#home" class="logo"><img src="img/logo.svg" alt="logo" /></a>
+                <nav role="navigation">
+                    <ul class="nav">
+                        <li data-menuanchor="about" onclick="ga('send', 'event', 'Main Nav', 'click', 'About');"><a href="#about">About</a></li>
+                        <li data-menuanchor="work"><a href="#work" onclick="ga('send', 'event', 'Main Nav', 'click', 'Work');">Work</a></li>
+                        <li data-menuanchor="contact"><a href="#contact" onclick="ga('send', 'event', 'Main Nav', 'click', 'Contact');">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="content">
+            <section class="section section-home">
                 <div class="container">
-                    <a href="#home" class="logo"><img src="img/logo.svg" alt="logo" /></a>
-                    <nav role="navigation">
-                        <ul class="nav">
-                            <li data-menuanchor="about" onclick="ga('send', 'event', 'Main Nav', 'click', 'About');"><a href="#about">About</a></li>
-                            <li data-menuanchor="work"><a href="#work" onclick="ga('send', 'event', 'Main Nav', 'click', 'Work');">Work</a></li>
-                            <li data-menuanchor="contact"><a href="#contact" onclick="ga('send', 'event', 'Main Nav', 'click', 'Contact');">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-            <div class="content">
-                <section class="section section-home">
-                    <div class="container">
-                        <span class="typewriter"></span>
-                        <h1>Andrzej Dubiel - Front End Developer &amp; UI/UX Designer</h1>
+                    <span class="typewriter"></span>
+                    <h1>Andrzej Dubiel - Front End Developer &amp; UI/UX Designer</h1>
 
-                        <ul class="social">
-                          <li><a href="#contact" onclick="ga('send', 'event', 'Social', 'click', 'Contact');"><i class="fa fa-envelope"></i></a></li>
-                          <li><a href="http://pl.linkedin.com/pub/andrzej-dubiel/2b/1ba/492" onclick="ga('send', 'event', 'Social', 'click', 'LinkedIn');" target="_blank" ><i class="fa fa-linkedin"></i></a></li>
-                          <li><a href="https://github.com/pier0n" target="_blank" onclick="ga('send', 'event', 'Social', 'click', 'Github');"><i class="fa fa-github"></i></a></li>
-                          <li><a href="http://codepen.io/dubiel/" target="_blank"><i class="fa fa-codepen" onclick="ga('send', 'event', 'Social', 'click', 'Codepen');"></i></a></li>
-                          <li><a href="https://dribbble.com/andrzej-dubiel" target="_blank" onclick="ga('send', 'event', 'Social', 'click', 'Dribbble');"><i class="fa fa-dribbble"></i></a></li>
-                          <li><a href="http://instagram.com/a_dubiel/" target="_blank"><i class="fa fa-instagram" onclick="ga('send', 'event', 'Social', 'click', 'Instagram');"></i></a></li>
-                          <li><a href="https://soundcloud.com/pier0n/likes" target="_blank" onclick="ga('send', 'event', 'Social', 'click', 'Soundcloud');"><i class="fa fa-soundcloud"></i></a></li>
-                      </ul>
+                    <ul class="social">
+                      <li><a href="#contact" onclick="ga('send', 'event', 'Social', 'click', 'Contact');"><i class="fa fa-envelope"></i></a></li>
+                      <li><a href="http://pl.linkedin.com/pub/andrzej-dubiel/2b/1ba/492" onclick="ga('send', 'event', 'Social', 'click', 'LinkedIn');" target="_blank" ><i class="fa fa-linkedin"></i></a></li>
+                      <li><a href="https://github.com/pier0n" target="_blank" onclick="ga('send', 'event', 'Social', 'click', 'Github');"><i class="fa fa-github"></i></a></li>
+                      <li><a href="http://codepen.io/dubiel/" target="_blank"><i class="fa fa-codepen" onclick="ga('send', 'event', 'Social', 'click', 'Codepen');"></i></a></li>
+                      <li><a href="https://dribbble.com/andrzej-dubiel" target="_blank" onclick="ga('send', 'event', 'Social', 'click', 'Dribbble');"><i class="fa fa-dribbble"></i></a></li>
+                      <li><a href="http://instagram.com/a_dubiel/" target="_blank"><i class="fa fa-instagram" onclick="ga('send', 'event', 'Social', 'click', 'Instagram');"></i></a></li>
+                      <li><a href="https://soundcloud.com/pier0n/likes" target="_blank" onclick="ga('send', 'event', 'Social', 'click', 'Soundcloud');"><i class="fa fa-soundcloud"></i></a></li>
+                  </ul>
 
 
 
-                  </div>
+              </div>
 
-                  <a href="#about" onclick="ga('send', 'event', 'Main Nav', 'click', 'Scroll Down');"  class="scroll-down"><i class="fa fa-angle-down"></i></a>
+              <a href="#about" onclick="ga('send', 'event', 'Main Nav', 'click', 'Scroll Down');"  class="scroll-down"><i class="fa fa-angle-down"></i></a>
 
-              </section>
-              
-              <section class="section section-about" itemscope itemtype="https://schema.org/AboutPage">
-                <aside id="instafeed" class="instafeed"></aside>
-                <article class="about">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-lg-12 col-md-12">
-                                <h3>That's me.</h3>
-                                <p>My name is Andrzej. I am a front-end web developer and UI/UX designer with almost 6 years of hands-on experience. I have a true passion for web development and human interaction. I love breaking down complex ideas and turning them into simple and creative solutions. Over the course of my career, I have ve worked at a variety of companies, from startups to marketing agencies. Having a wide range of experience has given me an opportunity to explore new technologies and work with brilliant human beings.</p>
-                                <a onclick="ga('send', 'event', 'About', 'click', 'See Work');" href="#work" class="btn btn-default">My Work</a>
-                                <a onclick="ga('send', 'event', 'About', 'click', 'Download Resume');" href="files/dubiel-resume.pdf" class="btn btn-default"><i class="fa fa-download"></i> My resume</a>
-                            </div>                                
-                        </div>
+          </section>
+          
+          <section class="section section-about" itemscope itemtype="https://schema.org/AboutPage">
+            <aside id="instafeed" class="instafeed"></aside>
+            <article class="about">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <h3>That's me.</h3>
+                            <p>My name is Andrzej. I am a front-end web developer and UI/UX designer with almost 6 years of hands-on experience. I have a true passion for web development and human interaction. I love breaking down complex ideas and turning them into simple and creative solutions. Over the course of my career, I have ve worked at a variety of companies, from startups to marketing agencies. Having a wide range of experience has given me an opportunity to explore new technologies and work with brilliant human beings.</p>
+                            <a onclick="ga('send', 'event', 'About', 'click', 'See Work');" href="#work" class="btn btn-default">My Work</a>
+                            <a onclick="ga('send', 'event', 'About', 'click', 'Download Resume');" href="files/dubiel-resume.pdf" class="btn btn-default"><i class="fa fa-download"></i> My resume</a>
+                        </div>                                
                     </div>
-                </article>
-                <div class="clearfix"></div>
-            </section>
+                </div>
+            </article>
+            <div class="clearfix"></div>
+        </section>
 
-            <section class="section section-work">
+        <section class="section section-work">
 
-                <div class="work">
-                    <div class="cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-slides=".work-item" data-carousel-offset="85" data-cycle-log="false" data-cycle-next="#next" data-cycle-prev="#prev">
+            <div class="work">
+                <div class="cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-slides=".work-item" data-carousel-offset="85" data-cycle-log="false" data-cycle-next="#next" data-cycle-prev="#prev">
 
-                        <a onclick="ga('send', 'event', 'Work', 'click', 'Hasztag');" href="img/work-hasztag.jpg" class="work-item" data-effect="mfp-3d-unfold" itemscope itemtype="https://schema.org/CreativeWork">
-                            <div class="square">
-                                <img src="img/logo-hasztag.svg" alt="Hasztag.info Logo" />
-                                <i class="fa fa-search"></i>
-                            </div>
-                            <h6 class="title">Hasztag.info</h6>
-                            <p class="caption">Design, Development</p>
-                        </a>
-
-                        <a onclick="ga('send', 'event', 'Work', 'click', 'Wybierzsport');" href="img/work-wybierzsport.jpg" class="work-item" data-effect="mfp-3d-unfold" itemscope itemtype="https://schema.org/CreativeWork">
-                            <div class="square">
-                             <img src="img/logo-wybierzsport.svg" alt="Wybierzsport.pl Logo" />
-                             <i class="fa fa-search"></i>
-
-                         </div>
-                         <h6 class="title">Wybierzsport.pl</h6>
-                         <p class="caption">Design, Development</p>
-                     </a>
-
-                     <a onclick="ga('send', 'event', 'Work', 'click', 'Swimsmart');" href="img/work-swimsmart.jpg" class="work-item" data-effect="mfp-3d-unfold" itemscope itemtype="https://schema.org/CreativeWork">
+                    <a onclick="ga('send', 'event', 'Work', 'click', 'Hasztag');" href="img/work-hasztag.jpg" class="work-item" data-effect="mfp-3d-unfold" itemscope itemtype="https://schema.org/CreativeWork">
                         <div class="square">
-                         <img src="img/logo-swimsmart.svg" alt="Swimsmart Logo" />
-                         <i class="fa fa-search"></i>
-                     </div>
-                     <h6 class="title">Swimsmart</h6>
-                     <p class="caption">Concept Design</p>
-                 </a> 
+                            <img src="img/logo-hasztag.svg" alt="Hasztag.info Logo" />
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <h6 class="title">Hasztag.info</h6>
+                        <p class="caption">Design, Development</p>
+                    </a>
 
-                 <a onclick="ga('send', 'event', 'Work', 'click', 'Custi');" href="img/work-custi.jpg" class="work-item" data-effect="mfp-3d-unfold" itemscope itemtype="https://schema.org/CreativeWork">
+                    <a onclick="ga('send', 'event', 'Work', 'click', 'Wybierzsport');" href="img/work-wybierzsport.jpg" class="work-item" data-effect="mfp-3d-unfold" itemscope itemtype="https://schema.org/CreativeWork">
+                        <div class="square">
+                           <img src="img/logo-wybierzsport.svg" alt="Wybierzsport.pl Logo" />
+                           <i class="fa fa-search"></i>
+
+                       </div>
+                       <h6 class="title">Wybierzsport.pl</h6>
+                       <p class="caption">Design, Development</p>
+                   </a>
+
+                   <a onclick="ga('send', 'event', 'Work', 'click', 'Swimsmart');" href="img/work-swimsmart.jpg" class="work-item" data-effect="mfp-3d-unfold" itemscope itemtype="https://schema.org/CreativeWork">
                     <div class="square">
-                     <img src="img/logo-custi.svg" alt="Custi Logo"/>
-                     <i class="fa fa-search"></i>
-                 </div>
-                 <h6 class="title">Custi</h6>
-                 <p class="caption">Design, Development</p>
-             </a>
+                       <img src="img/logo-swimsmart.svg" alt="Swimsmart Logo" />
+                       <i class="fa fa-search"></i>
+                   </div>
+                   <h6 class="title">Swimsmart</h6>
+                   <p class="caption">Concept Design</p>
+               </a> 
 
-             <a onclick="ga('send', 'event', 'Work', 'click', 'Koka');" href="img/work-koka.jpg" class="work-item" data-effect="mfp-3d-unfold" itemscope itemtype="https://schema.org/CreativeWork">
+               <a onclick="ga('send', 'event', 'Work', 'click', 'Custi');" href="img/work-custi.jpg" class="work-item" data-effect="mfp-3d-unfold" itemscope itemtype="https://schema.org/CreativeWork">
                 <div class="square">
-                 <img src="img/logo-koka.svg" alt="Koka Beats Logo" />
-                 <i class="fa fa-search"></i>
-             </div>
-             <h6 class="title">Koka Beats</h6>
-             <p class="caption">Design, Development</p>
-         </a>  
+                   <img src="img/logo-custi.svg" alt="Custi Logo"/>
+                   <i class="fa fa-search"></i>
+               </div>
+               <h6 class="title">Custi</h6>
+               <p class="caption">Design, Development</p>
+           </a>
 
-         <a onclick="ga('send', 'event', 'Work', 'click', 'Thrive');" href="img/work-thrive.jpg" class="work-item" data-effect="mfp-3d-unfold" itemscope itemtype="https://schema.org/CreativeWork">
+           <a onclick="ga('send', 'event', 'Work', 'click', 'Koka');" href="img/work-koka.jpg" class="work-item" data-effect="mfp-3d-unfold" itemscope itemtype="https://schema.org/CreativeWork">
             <div class="square">
-             <img src="img/logo-thrive.svg" alt="Thrive Logo" />
-             <i class="fa fa-search"></i>
-         </div>
-         <h6 class="title">Thrive</h6>
-         <p class="caption">Design, Development</p>
-     </a>  
+               <img src="img/logo-koka.svg" alt="Koka Beats Logo" />
+               <i class="fa fa-search"></i>
+           </div>
+           <h6 class="title">Koka Beats</h6>
+           <p class="caption">Design, Development</p>
+       </a>  
+
+       <a onclick="ga('send', 'event', 'Work', 'click', 'Thrive');" href="img/work-thrive.jpg" class="work-item" data-effect="mfp-3d-unfold" itemscope itemtype="https://schema.org/CreativeWork">
+        <div class="square">
+           <img src="img/logo-thrive.svg" alt="Thrive Logo" />
+           <i class="fa fa-search"></i>
+       </div>
+       <h6 class="title">Thrive</h6>
+       <p class="caption">Design, Development</p>
+   </a>  
 
 
- </div>
+</div>
 
- <div class="container">
-    <nav class="nav-work">
-        <a href="#" class="prev" id="prev" onclick="ga('send', 'event', 'Work', 'click', 'Nav Prev');"><i class="fa fa-angle-left"></i></a>
-        <a href="#" class="next" id="next" onclick="ga('send', 'event', 'Work', 'click', 'Nav Next');"><i class="fa fa-angle-right"></i></a>
-    </nav>
+<div class="container">
+<nav class="nav-work">
+    <a href="#" class="prev" id="prev" onclick="ga('send', 'event', 'Work', 'click', 'Nav Prev');"><i class="fa fa-angle-left"></i></a>
+    <a href="#" class="next" id="next" onclick="ga('send', 'event', 'Work', 'click', 'Nav Next');"><i class="fa fa-angle-right"></i></a>
+</nav>
 </div>
 </div>
 
 </section>
 
 <section class="section section-contact" >
-    <div class="container">
-        <div class="contact">
-            <h3>How are things?</h3>
-            <p class="intro">New project? Tight deadline? Let's have a chat.</p>
-            <div class="row">
-                <div class="col-lg-6 col-lg-offset-3 col-sm-8 col-sm-offset-2">
-                    <form id="contact-form">
-                        <div class="row">
-                            <div class="col-lg-6 col-sm-6">
-                                <div class="input-group form-group">
-                                    <span class="input-group-addon" id="username"><i class="fa fa-user"></i></span>
-                                    <input type="text" name="username" class="form-control" placeholder="What's your name?" aria-describedby="username">
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-sm-6">
-                                <div class="input-group form-group">
-                                    <span class="input-group-addon" id="email"><i class="fa fa-envelope"></i></span>
-                                    <input type="email" name="email" class="form-control" placeholder="What's your e-mail?" aria-describedby="email">
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="col-lg-12">
-                                <div class="form-group message-wrap">
-                                    <label for="message" class="sr-only">Message</label>
-                                    <i class="fa fa-pencil"></i>
-                                    <textarea class="form-control" id="message" name="message" placeholder="Type your message here"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <button type="submit" class="btn btn-default btn-block" onclick="ga('send', 'event', 'Contact Form', 'click', 'Send');">Send it</button>
+<div class="container">
+    <div class="contact">
+        <h3>How are things?</h3>
+        <p class="intro">New project? Tight deadline? Let's have a chat.</p>
+        <div class="row">
+            <div class="col-lg-6 col-lg-offset-3 col-sm-8 col-sm-offset-2">
+                <form id="contact-form">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="input-group form-group">
+                                <span class="input-group-addon" id="username"><i class="fa fa-user"></i></span>
+                                <input type="text" name="username" class="form-control" placeholder="What's your name?" aria-describedby="username">
                             </div>
                         </div>
-                    </form>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="input-group form-group">
+                                <span class="input-group-addon" id="email"><i class="fa fa-envelope"></i></span>
+                                <input type="email" name="email" class="form-control" placeholder="What's your e-mail?" aria-describedby="email">
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-lg-12">
+                            <div class="form-group message-wrap">
+                                <label for="message" class="sr-only">Message</label>
+                                <i class="fa fa-pencil"></i>
+                                <textarea class="form-control" id="message" name="message" placeholder="Type your message here"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <button type="submit" class="btn btn-default btn-block" onclick="ga('send', 'event', 'Contact Form', 'click', 'Send');">Send it</button>
+                        </div>
+                    </div>
+                </form>
 
-                    <ul class="social hidden-xs">
-                      <li><a href="http://pl.linkedin.com/pub/andrzej-dubiel/2b/1ba/492" onclick="ga('send', 'event', 'Social', 'click', 'LinkedIn');" target="_blank" ><i class="fa fa-linkedin"></i></a></li>
-                          <li><a href="https://github.com/pier0n" target="_blank" onclick="ga('send', 'event', 'Social', 'click', 'Github');"><i class="fa fa-github"></i></a></li>
-                          <li><a href="http://codepen.io/dubiel/" target="_blank"><i class="fa fa-codepen" onclick="ga('send', 'event', 'Social', 'click', 'Codepen');"></i></a></li>
-                          <li><a href="https://dribbble.com/andrzej-dubiel" target="_blank" onclick="ga('send', 'event', 'Social', 'click', 'Dribbble');"><i class="fa fa-dribbble"></i></a></li>
-                          <li><a href="http://instagram.com/a_dubiel/" target="_blank"><i class="fa fa-instagram" onclick="ga('send', 'event', 'Social', 'click', 'Instagram');"></i></a></li>
-                          <li><a href="https://soundcloud.com/pier0n/likes" target="_blank" onclick="ga('send', 'event', 'Social', 'click', 'Soundcloud');"><i class="fa fa-soundcloud"></i></a></li>
-                  </ul>
-                  <footer class="love">
-                      <p>Made with love.</p>
-                  </footer>
-              </div>
+                <ul class="social hidden-xs">
+                  <li><a href="http://pl.linkedin.com/pub/andrzej-dubiel/2b/1ba/492" onclick="ga('send', 'event', 'Social', 'click', 'LinkedIn');" target="_blank" ><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="https://github.com/pier0n" target="_blank" onclick="ga('send', 'event', 'Social', 'click', 'Github');"><i class="fa fa-github"></i></a></li>
+                  <li><a href="http://codepen.io/dubiel/" target="_blank"><i class="fa fa-codepen" onclick="ga('send', 'event', 'Social', 'click', 'Codepen');"></i></a></li>
+                  <li><a href="https://dribbble.com/andrzej-dubiel" target="_blank" onclick="ga('send', 'event', 'Social', 'click', 'Dribbble');"><i class="fa fa-dribbble"></i></a></li>
+                  <li><a href="http://instagram.com/a_dubiel/" target="_blank"><i class="fa fa-instagram" onclick="ga('send', 'event', 'Social', 'click', 'Instagram');"></i></a></li>
+                  <li><a href="https://soundcloud.com/pier0n/likes" target="_blank" onclick="ga('send', 'event', 'Social', 'click', 'Soundcloud');"><i class="fa fa-soundcloud"></i></a></li>
+              </ul>
+              <footer class="love">
+                  <p>Made with love.</p>
+              </footer>
           </div>
       </div>
   </div>
+</div>
 </section>
 </div>
 
@@ -224,13 +229,13 @@
 <script src="js/min/plugins.min.js"></script>
 <script src="js/min/main.min.js"></script>
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-58395119-1', 'auto');
-  ga('send', 'pageview');
+ga('create', 'UA-58395119-1', 'auto');
+ga('send', 'pageview');
 
 </script>
 </body>
