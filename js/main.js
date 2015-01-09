@@ -47,7 +47,7 @@ $(document).ready(function() {
 Pace.once('done', function(){
     
     $('.typewriter').typed({
-        strings: ["^1800 Hi.^800 It's nice to see you.", "I'm Andrzej and ^700 I do the internets.", "Feel free to scroll down now... ^3000 Come on.^2000", "Don't be shy.", "Do it."],
+        strings: ["^1800 Hi.^800 It's nice to see you.", "I'm Andrzej and ^700 I do The Internets."],
         typeSpeed: 40,
         backSpeed: 20,
         backDelay: 800
