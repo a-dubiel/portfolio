@@ -35,11 +35,11 @@ $(document).ready(function() {
         controlArrows: true,
         verticalCentered: false,
         resize : false,
-     //   sectionsColor : ['#ccc', '#fff'],
-     //   paddingTop: '3em',
-     //   paddingBottom: '10px',
-     fixedElements: '#header',
-     responsive: 0,  
+        fixedElements: '#header',
+        responsive: 0, 
+        afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){
+          console.log(index);
+        }
  });
 
 
