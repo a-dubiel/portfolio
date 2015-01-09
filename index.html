@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="css/pace.min.css">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Andrzej Dubiel - Front-End Developer in Wrocław, Poland</title>
+    <title>Andrzej Dubiel - Front-End Developer in Wroclaw, Poland</title>
     <meta name="description" content="Andrzej Dubiel is a front-end web developer and UI/UX designer. He has almost 6 years of hands-on experience and worked for variety of companies, from startups to marketing agencies. He loves breaking down complex problems and turning them into simple and creative solutions.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:title" content="Andrzej Dubiel - Front-End Web Developer from Wrocław, Poland."/>
@@ -64,7 +64,7 @@
     <!-- Nav -->
     <header class="header">
         <div class="container">
-            <a href="#home" class="logo"><img src="img/logo.svg" alt="logo" /></a>
+            <a href="#home" class="logo" onclick="ga('send', 'event', 'Main Nav', 'click', 'Home');"><img src="img/logo.svg" alt="logo" /></a>
             <nav role="navigation">
                 <ul class="nav">
                     <li data-menuanchor="about" onclick="ga('send', 'event', 'Main Nav', 'click', 'About');"><a href="#about">About</a></li>
@@ -123,7 +123,7 @@
     <!-- Work -->
     <section class="section section-work">
         <div class="work">
-            <div class="cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-slides=".work-item" data-carousel-offset="85" data-cycle-log="false" data-cycle-next="#next" data-cycle-prev="#prev">
+            <div class="cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-slides=".work-item" data-carousel-offset="85" data-cycle-log="false" data-cycle-next="#next" data-cycle-prev="#prev" data-cycle-swipe="true" data-cycle-swipe-fx="scrollHorz">
 
                 <a onclick="ga('send', 'event', 'Work', 'click', 'Hasztag');" href="img/work-hasztag.jpg" class="work-item" data-effect="mfp-3d-unfold" itemscope itemtype="https://schema.org/CreativeWork">
                     <div class="square">
