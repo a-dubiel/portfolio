@@ -5,13 +5,24 @@ RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
 
 ErrorDocument 404 /404.html
 
-# block visitors referred from semalt.com
-RewriteEngine on
-RewriteCond %{HTTP_REFERER} semalt\.com [NC]
-RewriteRule .* – [F]
-# End semalt block
-# block referer spam buttons for website
-RewriteEngine On
-RewriteCond %{HTTP_REFERER} buttons\-for\-website\.com
-RewriteRule ^.* - [F,L]
-# End buttons for website block
+# Block Russian Referrer Spam
+
+RewriteCond %{HTTP_REFERER} ^http://.*ilovevitaly\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*ilovevitaly.\.ru/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*ilovevitaly\.org/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*ilovevitaly\.info/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*iloveitaly\.ru/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*econom\.co/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*savetubevideo\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*kambasoft\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*buttons\-for\-website\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*semalt\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*darodar\.com/ [NC]
+RewriteCond %{HTTP_REFERER} ^http://.*humanorightswatch.org\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*addons\.mozilla\.org/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*googlsucks\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*aliexpress\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*hulfingtonpost\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*best\-seo\-solution\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*simple\-share\-buttons\.com/ [NC,OR]
+RewriteRule ^(.*)$ – [F,L]
