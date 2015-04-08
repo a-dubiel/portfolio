@@ -1,3 +1,5 @@
 config.codekit
 .DS_Store
 .codekit-cache
+/emory
+/ufhealth
