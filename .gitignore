@@ -3,3 +3,4 @@ config.codekit
 .codekit-cache
 /emory
 /ufhealth
+/lab
